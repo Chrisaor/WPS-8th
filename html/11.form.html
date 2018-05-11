@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <form action="" method="get">
+    <h2>Basic</h2>
+    <label for="username">ID</label>
+    <input type="text" id='username'>
+  </form>
+  <h2>Input types</h2>
+  <form action="">
+    <!-- input요쇼의 'name'속성에 있는 값이 GET요청으로 전달되는 데이터의 키가 된다. -->
+    <input type="text" id="username" name="username">
+    <input type="password" name="password">
+    <input type="radio" id='radio1' name="radio" value="A">
+    <input type="radio" id='radio2' name="radio" value="B">
+    <input type="radio" id='radio3' name="radio" value="C">
+    <input type="checkbox" id="checkbox" name="checkbox">
+    <input type="button" value="버튼">
+    <input type="file" id="file">
+    <input type="submit">
+    <input type="reset">
+    <input type="hidden" id="hidden" value="hiddenValue">
+  </form>
+
+  <h2>label</h2>
+  <form action="">
+    <label>ID <input type="text"></label>
+  </form>
+
+  <form action="">
+    <label for="input-username">ID</label>
+    <input type="text" id="input-username">
+  </form>
+
+  <h2>select</h2>
+  <select name="number" id="select-id">
+    <option value="1">First</option>
+    <option value="2">Second</option>
+    <option value="3">Third</option>
+    <option value="4">Fourth</option>
+  </select>
+
+  <h2>select multiple</h2>
+  <select name="multiple" id="select-multiple" multiple>
+    <option value="1">First</option>
+    <option value="2">Second</option>
+    <option value="3">Third</option>
+    <option value="4">Fourth</option>
+  </select>
+
+  <h2>optgroup</h2>
+  <select name="" id="">
+    <optgroup label="Fruits">
+      <option value="apple">Apple</option>
+      <option value="banana">Banana</option>
+      <option value="oragne">Orange</option>
+    </optgroup>
+    <optgroup label="Colors">
+      <option value="red">Red</option>
+      <option value="blue">Blue</option>
+      <option value="green">Green</option>
+
+    </optgroup>
+  </select>
+
+  <h2>fieldset, legend</h2>
+  <fieldset>
+    <legend>Login</legend>
+    <label for="">username: <input type="text"></label>
+    <label for="">password: <input type="password"></label>
+  </fieldset>
+</body>
+</html>
