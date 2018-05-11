@@ -7,35 +7,55 @@ html, body {
 ul, ol {
   padding: 0;
   margin: 0;
+  list-style-type: none;
 }
 
-header {
-  width: 100%;
-  height: 61px;
-  border-bottom: 1px solid #e7e7e7;
-  background-color: #fff;
-  .left {
-    list-style-type: none;
-    > li {
-      float: left;
-      display: inline-block;
-      > a {
 
+$header-nav-height: 61px;
+$header-border-color: #e7e7e7;
+
+header.main-header {
+  width: 100%;
+  height: $header-nav-height;
+  border-bottom: 1px solid $header-border-color;
+  background-color: #fff;
+
+  ul.header-menu-list{
+    li {
+      float: left;
+      line-height: $header-nav-height;
+      img {
+        vertical-align: middle;
       }
     }
   }
+  .left {
+    float: left;
+    height: 100%;
+    > li {
+      > a {
+        margin-left: 20px;
+      }
+    }
+
+  }
   .right {
+    float: right;
     list-style-type: none;
     > li {
-      float: right;
-      > a {
+        > a {
+        font-size: 14px;
         display: inline-block;
-        height: 60px;
+        height: 100%;
+        line-height: $header-nav-height;
         padding: 0 3px;
         margin: 0 7px;
         text-decoration: none;
         color: #585858;
       }
+      > a:hover{
+          color: #58b5d3;
+        }
     }
   }
 }
