@@ -40,17 +40,95 @@ header.main-header .right {
   list-style-type: none;
 }
 
-header.main-header .right > li > a {
+header.main-header .right .header-menu-list {
+  float: left;
+}
+
+header.main-header .right .header-menu-list.room-list {
   font-size: 14px;
+}
+
+header.main-header .right .header-menu-list.auth-list {
+  font-size: 12px;
+}
+
+header.main-header .right .header-menu-list > li > a {
   display: inline-block;
   height: 100%;
   line-height: 61px;
-  padding: 0 3px;
-  margin: 0 7px;
+  padding: 0 0px;
+  margin: 0 10px;
   text-decoration: none;
   color: #585858;
 }
 
-header.main-header .right > li > a:hover {
+header.main-header .right .header-menu-list > li:first-child {
+  margin-left: 15px;
+}
+
+header.main-header .right .header-menu-list > li > a:hover {
   color: #58b5d3;
+}
+
+.search-container {
+  position: relative;
+  height: 678px;
+  background-position: center center;
+}
+
+.search-container .search-bottom {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 110px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.ThemeSearch {
+  width: 100%;
+}
+
+.ThemeSearch .ThemeSearch-header {
+  text-align: center;
+}
+
+.ThemeSearch .ThemeSearch-header .ThemeSearch-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.ThemeSearch .ThemeSearch-header .ThemeSearch-subtitle {
+  font-size: 20px;
+}
+
+.ThemeSearch .ThemeSearch-contents {
+  width: 990px;
+  display: block;
+  margin: auto;
+  padding-bottom: 150px;
+}
+
+.ThemeSearch .ThemeSearch-contents::after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.ThemeSearch .ThemeSearch-contents .ThemeSearch-firstRow, .ThemeSearch .ThemeSearch-contents .ThemeSearch-secondRow {
+  width: 100%;
+}
+
+.ThemeSearch .ThemeSearch-contents .ThemeSearch-firstRow .ThemeSearch-item, .ThemeSearch .ThemeSearch-contents .ThemeSearch-secondRow .ThemeSearch-item {
+  width: 300px;
+  height: 300px;
+  margin: 15px;
+  float: left;
+}
+
+.ThemeSearch .banner {
+  width: 100%;
+  height: 100px;
+  border: 1px solid black;
 }
