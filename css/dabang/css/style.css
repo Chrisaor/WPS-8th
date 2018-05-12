@@ -95,10 +95,11 @@ header.main-header .right .header-menu-list > li > a:hover {
 .ThemeSearch .ThemeSearch-header .ThemeSearch-title {
   font-size: 36px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .ThemeSearch .ThemeSearch-header .ThemeSearch-subtitle {
+  margin-top: 0px;
   font-size: 20px;
 }
 
@@ -121,14 +122,60 @@ header.main-header .right .header-menu-list > li > a:hover {
 }
 
 .ThemeSearch .ThemeSearch-contents .ThemeSearch-firstRow .ThemeSearch-item, .ThemeSearch .ThemeSearch-contents .ThemeSearch-secondRow .ThemeSearch-item {
+  position: relative;
   width: 300px;
   height: 300px;
   margin: 15px;
   float: left;
+  transition: transform .3s ease-in-out;
 }
 
-.ThemeSearch .banner {
+.ThemeSearch .ThemeSearch-contents .ThemeSearch-firstRow .ThemeSearch-item::after, .ThemeSearch .ThemeSearch-contents .ThemeSearch-secondRow .ThemeSearch-item::after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.ThemeSearch .ThemeSearch-contents .ThemeSearch-firstRow .ThemeSearch-item .ThemeSearch-mask, .ThemeSearch .ThemeSearch-contents .ThemeSearch-secondRow .ThemeSearch-item .ThemeSearch-mask {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #2a2a2a;
+  transition: transform 0.3s ease-in-out;
+  opacity: 0.4;
+}
+
+.ThemeSearch .ThemeSearch-contents .ThemeSearch-firstRow .ThemeSearch-item .ThemeSearch-text, .ThemeSearch .ThemeSearch-contents .ThemeSearch-secondRow .ThemeSearch-item .ThemeSearch-text {
+  position: absolute;
+  top: 96px;
+  height: 100%;
+  width: inherit;
+  color: #fff;
+  z-index: 1;
+  text-align: center;
+}
+
+.ThemeSearch .ThemeSearch-contents .ThemeSearch-firstRow .ThemeSearch-item .ThemeSearch-text .ThemeSearch-text-title, .ThemeSearch .ThemeSearch-contents .ThemeSearch-secondRow .ThemeSearch-item .ThemeSearch-text .ThemeSearch-text-title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.ThemeSearch .ThemeSearch-contents .ThemeSearch-firstRow .ThemeSearch-item .ThemeSearch-text .ThemeSearch-text-line, .ThemeSearch .ThemeSearch-contents .ThemeSearch-secondRow .ThemeSearch-item .ThemeSearch-text .ThemeSearch-text-line {
+  width: 46px;
+  height: 1px;
+  background-color: #fff;
+  margin: 23px auto;
+}
+
+.banner {
   width: 100%;
   height: 100px;
-  border: 1px solid black;
+}
+
+.banner .banner-image {
+  width: 1000px;
+  height: 100px;
+  background-repeat: repeat;
+  margin: auto;
 }
